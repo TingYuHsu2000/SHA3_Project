@@ -1,0 +1,90 @@
+ 
+****************************************
+Report : area
+Design : top
+Version: R-2020.09
+Date   : Tue Sep 12 18:59:50 2023
+****************************************
+
+Library(s) Used:
+
+    sc9_cln40g_base_lvt_tt_typical_max_0p90v_25c (File: /usr/cad/CBDK/CBDK_TSMC40_Arm_f2.0/CIC/SynopsysDC/db/sc9_base_lvt/sc9_cln40g_base_lvt_tt_typical_max_0p90v_25c.db)
+
+Number of ports:                        90985
+Number of nets:                        473885
+Number of cells:                       384735
+Number of combinational cells:         325036
+Number of sequential cells:             59673
+Number of macros/black boxes:               0
+Number of buf/inv:                      50193
+Number of references:                     173
+
+Combinational area:             344177.157526
+Buf/Inv area:                    23066.239898
+Noncombinational area:          270676.714570
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                614853.872096
+Total area:                 undefined
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area              Local cell area
+                                  --------------------  -------------------------------- 
+Hierarchical cell                 Absolute     Percent  Combi-       Noncombi-    Black-
+                                  Total        Total    national     national     boxes   Design
+--------------------------------  -----------  -------  -----------  -----------  ------  ----------
+top                               614853.8721    100.0  111010.4326  212089.7415  0.0000  top
+F_function                        272306.5061     44.3       1.3608   58060.7971  0.0000  F_function
+F_function/fsub1                    8926.8478      1.5    8926.8478       0.0000  0.0000  f_sub_23
+F_function/fsub2                    8926.8478      1.5    8926.8478       0.0000  0.0000  f_sub_22
+F_function/fsub3                    8926.8478      1.5    8926.8478       0.0000  0.0000  f_sub_21
+F_function/generate_block_f_function[12].fsub4
+                                    8926.8478      1.5    8926.8478       0.0000  0.0000  f_sub_11
+F_function/generate_block_f_function[12].fsub5
+                                    8926.8478      1.5    8926.8478       0.0000  0.0000  f_sub_10
+F_function/generate_block_f_function[12].fsub6
+                                    8926.8478      1.5    8926.8478       0.0000  0.0000  f_sub_9
+F_function/generate_block_f_function[15].fsub4
+                                    8926.8478      1.5    8926.8478       0.0000  0.0000  f_sub_8
+F_function/generate_block_f_function[15].fsub5
+                                    8926.8478      1.5    8926.8478       0.0000  0.0000  f_sub_7
+F_function/generate_block_f_function[15].fsub6
+                                    8926.8478      1.5    8926.8478       0.0000  0.0000  f_sub_6
+F_function/generate_block_f_function[18].fsub4
+                                    8926.8478      1.5    8926.8478       0.0000  0.0000  f_sub_5
+F_function/generate_block_f_function[18].fsub5
+                                    8926.8478      1.5    8926.8478       0.0000  0.0000  f_sub_4
+F_function/generate_block_f_function[18].fsub6
+                                    8926.8478      1.5    8926.8478       0.0000  0.0000  f_sub_3
+F_function/generate_block_f_function[21].fsub4
+                                    8926.8478      1.5    8926.8478       0.0000  0.0000  f_sub_2
+F_function/generate_block_f_function[21].fsub5
+                                    8926.8478      1.5    8926.8478       0.0000  0.0000  f_sub_1
+F_function/generate_block_f_function[21].fsub6
+                                    8926.8478      1.5    8926.8478       0.0000  0.0000  f_sub_0
+F_function/generate_block_f_function[3].fsub4
+                                    8926.8478      1.5    8926.8478       0.0000  0.0000  f_sub_20
+F_function/generate_block_f_function[3].fsub5
+                                    8926.8478      1.5    8926.8478       0.0000  0.0000  f_sub_19
+F_function/generate_block_f_function[3].fsub6
+                                    8926.8478      1.5    8926.8478       0.0000  0.0000  f_sub_18
+F_function/generate_block_f_function[6].fsub4
+                                    8926.8478      1.5    8926.8478       0.0000  0.0000  f_sub_17
+F_function/generate_block_f_function[6].fsub5
+                                    8926.8478      1.5    8926.8478       0.0000  0.0000  f_sub_16
+F_function/generate_block_f_function[6].fsub6
+                                    8926.8478      1.5    8926.8478       0.0000  0.0000  f_sub_15
+F_function/generate_block_f_function[9].fsub4
+                                    8926.8478      1.5    8926.8478       0.0000  0.0000  f_sub_14
+F_function/generate_block_f_function[9].fsub5
+                                    8926.8478      1.5    8926.8478       0.0000  0.0000  f_sub_13
+F_function/generate_block_f_function[9].fsub6
+                                    8926.8478      1.5    8926.8478       0.0000  0.0000  f_sub_12
+controller                         19447.1920      3.2   18921.0160     526.1760  0.0000  controller
+--------------------------------  -----------  -------  -----------  -----------  ------  ----------
+Total                                                   344177.1575  270676.7146  0.0000
+
+1

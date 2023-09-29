@@ -1,0 +1,341 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : top
+Version: R-2020.09
+Date   : Tue Sep 12 18:59:50 2023
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: ss_typical_max_0p81v_125c   Library: sc9_cln40g_base_lvt_ss_typical_max_0p81v_125c
+Wire Load Model Mode: top
+
+  Startpoint: slice/eight_input_finish_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: slice/input_data_buffer_reg[0][5823]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  top                Zero                  sc9_cln40g_base_lvt_ss_typical_max_0p81v_125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  slice/eight_input_finish_reg/CK (DFFRPQ_X2M_A9TL)       0.00 #     0.00 r
+  slice/eight_input_finish_reg/Q (DFFRPQ_X2M_A9TL)        0.07       0.07 f
+  U24569/Y (INV_X2M_A9TL)                                 0.13       0.20 r
+  U29947/Y (MXIT2_X0P7M_A9TL)                             0.04       0.24 r
+  U18673/Y (XOR2_X0P7M_A9TL)                              0.05       0.29 r
+  U18671/Y (OAI22_X1M_A9TL)                               0.03       0.32 f
+  U26182/Y (AOI22_X1M_A9TL)                               0.03       0.35 r
+  U72533/Y (NAND2_X1M_A9TL)                               0.02       0.37 f
+  U27172/Y (OR2_X1M_A9TL)                                 0.07       0.44 f
+  U29954/Y (AO1B2_X1M_A9TL)                               0.10       0.54 r
+  U18656/Y (INV_X1B_A9TL)                                 0.04       0.58 f
+  U27170/Y (BUF_X13M_A9TL)                                0.04       0.61 f
+  U24595/Y (INV_X9B_A9TL)                                 0.01       0.63 r
+  U79168/Y (OR2_X0P5M_A9TL)                               0.03       0.66 r
+  U140902/Y (BUF_X0P7M_A9TL)                              0.03       0.69 r
+  U140907/Y (INV_X0P5B_A9TL)                              0.06       0.75 f
+  U29958/Y (AND2_X2M_A9TL)                                0.05       0.80 f
+  U36064/Y (NAND2_X1A_A9TL)                               0.02       0.82 r
+  U36065/Y (NOR2_X1A_A9TL)                                0.02       0.83 f
+  U27910/Y (INV_X0P5B_A9TL)                               0.12       0.95 r
+  U26439/Y (NOR2_X0P5M_A9TL)                              0.02       0.98 f
+  U36773/Y (INV_X0P5B_A9TL)                               0.02       1.00 r
+  U21516/Y (NAND2_X0P5A_A9TL)                             0.02       1.02 f
+  U27904/Y (NOR2_X0P5B_A9TL)                              0.01       1.03 r
+  U30992/Y (NAND2_X0P5M_A9TL)                             0.02       1.04 f
+  U20588/Y (NOR2_X1M_A9TL)                                0.02       1.06 r
+  U30031/Y (NAND2_X0P5M_A9TL)                             0.01       1.08 f
+  U20278/Y (NOR2_X1M_A9TL)                                0.02       1.09 r
+  U30008/Y (NAND2_X0P5M_A9TL)                             0.02       1.11 f
+  U33193/Y (NOR2_X0P5B_A9TL)                              0.02       1.13 r
+  U29079/Y (NAND2_X0P5M_A9TL)                             0.02       1.15 f
+  U18593/Y (NOR2_X0P7M_A9TL)                              0.02       1.16 r
+  U19633/Y (NAND2_X1A_A9TL)                               0.01       1.18 f
+  U38762/Y (NOR2_X1P4B_A9TL)                              0.01       1.19 r
+  U26368/Y (NAND2_X1A_A9TL)                               0.01       1.20 f
+  U19142/Y (NOR2_X1M_A9TL)                                0.02       1.22 r
+  U26330/Y (NAND2_X2M_A9TL)                               0.01       1.23 f
+  U19135/Y (NOR2_X2M_A9TL)                                0.01       1.24 r
+  U39633/Y (NAND2_X2M_A9TL)                               0.01       1.25 f
+  U19126/Y (NOR2_X2M_A9TL)                                0.01       1.26 r
+  U29215/Y (NAND2_X1A_A9TL)                               0.01       1.28 f
+  U25045/Y (NOR2_X1P4M_A9TL)                              0.01       1.29 r
+  U25043/Y (NAND2_X1A_A9TL)                               0.01       1.30 f
+  U25042/Y (NOR2_X1A_A9TL)                                0.02       1.32 r
+  U19062/Y (NAND2_X1A_A9TL)                               0.01       1.34 f
+  U19046/Y (NOR2_X2M_A9TL)                                0.01       1.35 r
+  U25040/Y (NAND2_X2M_A9TL)                               0.01       1.36 f
+  U25039/Y (NOR2_X1A_A9TL)                                0.02       1.38 r
+  U39634/Y (NAND2_X2M_A9TL)                               0.01       1.39 f
+  U38744/Y (NOR2_X2B_A9TL)                                0.01       1.40 r
+  U25037/Y (NAND2_X2M_A9TL)                               0.01       1.41 f
+  U18998/Y (NOR2_X2M_A9TL)                                0.01       1.42 r
+  U39635/Y (NAND2_X2M_A9TL)                               0.01       1.43 f
+  U18984/Y (NOR2_X2M_A9TL)                                0.01       1.44 r
+  U18980/Y (NAND2_X1A_A9TL)                               0.01       1.46 f
+  U29214/Y (NOR2_X1A_A9TL)                                0.02       1.48 r
+  U39636/Y (NAND2_X2M_A9TL)                               0.01       1.49 f
+  U39637/Y (NOR2_X2B_A9TL)                                0.01       1.50 r
+  U39638/Y (NAND2_X2M_A9TL)                               0.01       1.51 f
+  U18964/Y (NOR2_X2M_A9TL)                                0.01       1.52 r
+  U39639/Y (NAND2_X2M_A9TL)                               0.01       1.53 f
+  U26362/Y (NOR2_X1P4M_A9TL)                              0.01       1.54 r
+  U26360/Y (NAND2_X1A_A9TL)                               0.01       1.56 f
+  U26359/Y (NOR2_X1A_A9TL)                                0.02       1.57 r
+  U39640/Y (NAND2_X1A_A9TL)                               0.01       1.59 f
+  U38691/Y (NOR2_X1B_A9TL)                                0.02       1.61 r
+  U70169/Y (NAND2_X1M_A9TL)                               0.01       1.62 f
+  U18963/Y (NOR2_X1A_A9TL)                                0.02       1.64 r
+  U39643/Y (NAND2_X1A_A9TL)                               0.01       1.65 f
+  U39644/Y (NOR2_X1M_A9TL)                                0.02       1.67 r
+  U39645/Y (NAND2_X1A_A9TL)                               0.01       1.68 f
+  U39646/Y (NOR2_X1M_A9TL)                                0.02       1.70 r
+  U39647/Y (NAND2_X1A_A9TL)                               0.01       1.72 f
+  U39648/Y (NOR2_X1M_A9TL)                                0.02       1.73 r
+  U39649/Y (NAND2_X1A_A9TL)                               0.01       1.75 f
+  U39650/Y (NOR2_X1M_A9TL)                                0.02       1.76 r
+  U39651/Y (NAND2_X1A_A9TL)                               0.01       1.78 f
+  U39652/Y (NOR2_X1M_A9TL)                                0.02       1.80 r
+  U39653/Y (NAND2_X1A_A9TL)                               0.01       1.81 f
+  U39654/Y (NOR2_X1M_A9TL)                                0.02       1.83 r
+  U39655/Y (NAND2_X1A_A9TL)                               0.01       1.84 f
+  U39656/Y (NOR2_X1M_A9TL)                                0.02       1.86 r
+  U38611/Y (NAND2_X1M_A9TL)                               0.01       1.87 f
+  U39658/Y (NOR2_X1M_A9TL)                                0.02       1.89 r
+  U39659/Y (NAND2_X1A_A9TL)                               0.01       1.90 f
+  U39660/Y (NOR2_X1M_A9TL)                                0.02       1.92 r
+  U39661/Y (NAND2_X1A_A9TL)                               0.01       1.93 f
+  U39662/Y (NOR2_X1M_A9TL)                                0.02       1.95 r
+  U39663/Y (NAND2_X1A_A9TL)                               0.01       1.96 f
+  U39664/Y (NOR2_X1M_A9TL)                                0.02       1.98 r
+  U39665/Y (NAND2_X1A_A9TL)                               0.01       2.00 f
+  U39666/Y (NOR2_X1M_A9TL)                                0.02       2.01 r
+  U39667/Y (NAND2_X1A_A9TL)                               0.01       2.03 f
+  U39668/Y (NOR2_X1M_A9TL)                                0.02       2.04 r
+  U39669/Y (NAND2_X1A_A9TL)                               0.01       2.06 f
+  U39670/Y (NOR2_X1M_A9TL)                                0.02       2.08 r
+  U39671/Y (NAND2_X1A_A9TL)                               0.01       2.09 f
+  U39672/Y (NOR2_X1M_A9TL)                                0.02       2.11 r
+  U38356/Y (NAND2_X1M_A9TL)                               0.01       2.12 f
+  U39674/Y (NOR2_X1M_A9TL)                                0.02       2.14 r
+  U39675/Y (NAND2_X1A_A9TL)                               0.01       2.15 f
+  U39676/Y (NOR2_X1M_A9TL)                                0.02       2.17 r
+  U39677/Y (NAND2_X1A_A9TL)                               0.01       2.18 f
+  U39678/Y (NOR2_X1M_A9TL)                                0.02       2.20 r
+  U39679/Y (NAND2_X1A_A9TL)                               0.01       2.21 f
+  U39681/Y (NOR2_X1M_A9TL)                                0.02       2.23 r
+  U39682/Y (NAND2_X1A_A9TL)                               0.01       2.25 f
+  U18961/Y (NOR2_X2M_A9TL)                                0.01       2.26 r
+  U24594/Y (NAND2_X2M_A9TL)                               0.01       2.27 f
+  U39684/Y (OR2_X2M_A9TL)                                 0.02       2.29 f
+  U39685/Y (OR2_X2M_A9TL)                                 0.02       2.30 f
+  U18960/Y (OR2_X0P7M_A9TL)                               0.02       2.33 f
+  U18959/Y (OR2_X0P7M_A9TL)                               0.03       2.35 f
+  U39688/Y (OR2_X2M_A9TL)                                 0.02       2.37 f
+  U18958/Y (OR2_X0P7M_A9TL)                               0.02       2.39 f
+  U29213/Y (OR2_X1M_A9TL)                                 0.02       2.42 f
+  U18957/Y (OR2_X0P7M_A9TL)                               0.02       2.44 f
+  U18956/Y (OR2_X1P4M_A9TL)                               0.02       2.47 f
+  U18955/Y (OR2_X0P7M_A9TL)                               0.03       2.49 f
+  U39689/Y (OR2_X2M_A9TL)                                 0.02       2.51 f
+  U18954/Y (OR2_X0P7M_A9TL)                               0.02       2.53 f
+  U18953/Y (OR2_X0P7M_A9TL)                               0.02       2.56 f
+  U18952/Y (OR2_X1P4M_A9TL)                               0.02       2.58 f
+  U18951/Y (OR2_X0P7M_A9TL)                               0.02       2.60 f
+  U39690/Y (OR2_X2M_A9TL)                                 0.02       2.62 f
+  U18950/Y (OR2_X0P7M_A9TL)                               0.02       2.65 f
+  U39691/Y (OR2_X2M_A9TL)                                 0.02       2.67 f
+  U18949/Y (OR2_X0P7M_A9TL)                               0.02       2.69 f
+  U39692/Y (OR2_X2M_A9TL)                                 0.02       2.71 f
+  U18592/Y (OR2_X2B_A9TL)                                 0.02       2.73 f
+  U18591/Y (OR2_X2B_A9TL)                                 0.02       2.74 f
+  U18948/Y (OR2_X0P7M_A9TL)                               0.02       2.77 f
+  U18947/Y (OR2_X1P4M_A9TL)                               0.02       2.79 f
+  U18946/Y (OR2_X0P7M_A9TL)                               0.03       2.81 f
+  U39693/Y (OR2_X2M_A9TL)                                 0.02       2.83 f
+  U18945/Y (OR2_X0P7M_A9TL)                               0.02       2.86 f
+  U18944/Y (OR2_X1P4M_A9TL)                               0.02       2.88 f
+  U18943/Y (OR2_X0P7M_A9TL)                               0.03       2.90 f
+  U39694/Y (OR2_X2M_A9TL)                                 0.02       2.92 f
+  U18942/Y (OR2_X0P7M_A9TL)                               0.02       2.95 f
+  U39696/Y (OR2_X2M_A9TL)                                 0.02       2.97 f
+  U18941/Y (OR2_X0P7M_A9TL)                               0.02       2.99 f
+  U18940/Y (OR2_X1P4M_A9TL)                               0.02       3.01 f
+  U18939/Y (OR2_X0P7M_A9TL)                               0.03       3.04 f
+  U39699/Y (OR2_X2M_A9TL)                                 0.02       3.06 f
+  U18938/Y (OR2_X0P7M_A9TL)                               0.02       3.08 f
+  U38305/Y (OR2_X1P4B_A9TL)                               0.02       3.10 f
+  U18936/Y (OR2_X0P7M_A9TL)                               0.03       3.13 f
+  U39701/Y (OR2_X2M_A9TL)                                 0.02       3.15 f
+  U18935/Y (OR2_X0P7M_A9TL)                               0.02       3.17 f
+  U39702/Y (OR2_X2M_A9TL)                                 0.02       3.19 f
+  U18934/Y (OR2_X0P7M_A9TL)                               0.02       3.21 f
+  U18933/Y (OR2_X1P4M_A9TL)                               0.02       3.23 f
+  U18932/Y (OR2_X0P7M_A9TL)                               0.03       3.26 f
+  U39703/Y (OR2_X2M_A9TL)                                 0.02       3.28 f
+  U18931/Y (OR2_X0P7M_A9TL)                               0.02       3.30 f
+  U18930/Y (OR2_X1P4M_A9TL)                               0.02       3.32 f
+  U18929/Y (OR2_X0P7M_A9TL)                               0.03       3.35 f
+  U39704/Y (OR2_X2M_A9TL)                                 0.02       3.37 f
+  U18928/Y (OR2_X0P7M_A9TL)                               0.02       3.39 f
+  U29212/Y (OR2_X1M_A9TL)                                 0.02       3.42 f
+  U18927/Y (OR2_X0P7M_A9TL)                               0.03       3.44 f
+  U39705/Y (OR2_X2M_A9TL)                                 0.02       3.46 f
+  U18926/Y (OR2_X0P7M_A9TL)                               0.02       3.48 f
+  U18925/Y (OR2_X1P4M_A9TL)                               0.02       3.51 f
+  U18924/Y (OR2_X0P7M_A9TL)                               0.03       3.53 f
+  U39706/Y (OR2_X2M_A9TL)                                 0.02       3.55 f
+  U18923/Y (OR2_X0P7M_A9TL)                               0.02       3.57 f
+  U39707/Y (OR2_X2M_A9TL)                                 0.02       3.59 f
+  U18922/Y (OR2_X0P7M_A9TL)                               0.02       3.62 f
+  U18921/Y (OR2_X1P4M_A9TL)                               0.02       3.64 f
+  U18920/Y (OR2_X0P7M_A9TL)                               0.03       3.66 f
+  U39708/Y (OR2_X2M_A9TL)                                 0.02       3.68 f
+  U18919/Y (OR2_X0P7M_A9TL)                               0.02       3.71 f
+  U39709/Y (OR2_X2M_A9TL)                                 0.02       3.73 f
+  U18918/Y (OR2_X0P7M_A9TL)                               0.02       3.75 f
+  U18917/Y (OR2_X1P4M_A9TL)                               0.02       3.77 f
+  U18916/Y (OR2_X0P7M_A9TL)                               0.03       3.80 f
+  U39710/Y (OR2_X2M_A9TL)                                 0.02       3.81 f
+  U18915/Y (OR2_X0P7M_A9TL)                               0.02       3.84 f
+  U39711/Y (OR2_X2M_A9TL)                                 0.02       3.86 f
+  U18914/Y (OR2_X0P7M_A9TL)                               0.02       3.88 f
+  U18913/Y (OR2_X1P4M_A9TL)                               0.02       3.90 f
+  U18912/Y (OR2_X0P7M_A9TL)                               0.03       3.93 f
+  U39712/Y (OR2_X2M_A9TL)                                 0.02       3.95 f
+  U18911/Y (OR2_X0P7M_A9TL)                               0.02       3.97 f
+  U39713/Y (OR2_X2M_A9TL)                                 0.02       3.99 f
+  U18910/Y (OR2_X0P7M_A9TL)                               0.02       4.01 f
+  U18909/Y (OR2_X1P4M_A9TL)                               0.02       4.04 f
+  U18908/Y (OR2_X0P7M_A9TL)                               0.02       4.06 f
+  U29211/Y (OR2_X1M_A9TL)                                 0.02       4.08 f
+  U18907/Y (OR2_X0P7M_A9TL)                               0.03       4.11 f
+  U39714/Y (OR2_X2M_A9TL)                                 0.02       4.13 f
+  U18906/Y (OR2_X0P7M_A9TL)                               0.02       4.15 f
+  U38284/Y (OR2_X1P4B_A9TL)                               0.02       4.17 f
+  U18904/Y (OR2_X0P7M_A9TL)                               0.03       4.20 f
+  U39715/Y (OR2_X2M_A9TL)                                 0.02       4.22 f
+  U18903/Y (OR2_X0P7M_A9TL)                               0.02       4.24 f
+  U18902/Y (OR2_X1P4M_A9TL)                               0.02       4.26 f
+  U18901/Y (OR2_X0P7M_A9TL)                               0.02       4.29 f
+  U18900/Y (OR2_X0P7M_A9TL)                               0.03       4.31 f
+  U39716/Y (OR2_X2M_A9TL)                                 0.02       4.33 f
+  U18899/Y (OR2_X0P7M_A9TL)                               0.02       4.36 f
+  U39717/Y (OR2_X2M_A9TL)                                 0.02       4.37 f
+  U18898/Y (OR2_X0P7M_A9TL)                               0.02       4.40 f
+  U29210/Y (OR2_X1M_A9TL)                                 0.02       4.42 f
+  U18897/Y (OR2_X0P7M_A9TL)                               0.02       4.45 f
+  U18896/Y (OR2_X1P4M_A9TL)                               0.02       4.47 f
+  U18895/Y (OR2_X0P7M_A9TL)                               0.03       4.49 f
+  U39719/Y (OR2_X2M_A9TL)                                 0.02       4.51 f
+  U18894/Y (OR2_X0P7M_A9TL)                               0.02       4.54 f
+  U18893/Y (OR2_X1P4M_A9TL)                               0.02       4.56 f
+  U18892/Y (OR2_X0P7M_A9TL)                               0.02       4.58 f
+  U39720/Y (OR2_X2M_A9TL)                                 0.02       4.60 f
+  U18891/Y (OR2_X0P7M_A9TL)                               0.02       4.63 f
+  U39721/Y (OR2_X2M_A9TL)                                 0.02       4.65 f
+  U18590/Y (OR2_X2B_A9TL)                                 0.02       4.66 f
+  U18589/Y (OR2_X2B_A9TL)                                 0.02       4.68 f
+  U18890/Y (OR2_X0P7M_A9TL)                               0.02       4.70 f
+  U18889/Y (OR2_X1P4M_A9TL)                               0.02       4.72 f
+  U18888/Y (OR2_X0P7M_A9TL)                               0.02       4.75 f
+  U39722/Y (OR2_X2M_A9TL)                                 0.02       4.77 f
+  U18887/Y (OR2_X0P7M_A9TL)                               0.02       4.79 f
+  U18886/Y (OR2_X0P7M_A9TL)                               0.02       4.82 f
+  U18885/Y (OR2_X1P4M_A9TL)                               0.02       4.84 f
+  U18884/Y (OR2_X0P7M_A9TL)                               0.03       4.86 f
+  U39723/Y (OR2_X2M_A9TL)                                 0.02       4.88 f
+  U18883/Y (OR2_X0P7M_A9TL)                               0.02       4.91 f
+  U18882/Y (OR2_X1P4M_A9TL)                               0.02       4.93 f
+  U18881/Y (OR2_X0P7M_A9TL)                               0.03       4.95 f
+  U39724/Y (OR2_X2M_A9TL)                                 0.02       4.97 f
+  U18880/Y (OR2_X0P7M_A9TL)                               0.02       5.00 f
+  U39725/Y (OR2_X2M_A9TL)                                 0.02       5.01 f
+  U18879/Y (OR2_X0P7M_A9TL)                               0.02       5.04 f
+  U18878/Y (OR2_X1P4M_A9TL)                               0.02       5.06 f
+  U18877/Y (OR2_X0P7M_A9TL)                               0.03       5.09 f
+  U39726/Y (OR2_X2M_A9TL)                                 0.02       5.10 f
+  U18876/Y (OR2_X0P7M_A9TL)                               0.02       5.13 f
+  U39727/Y (OR2_X2M_A9TL)                                 0.02       5.15 f
+  U18875/Y (OR2_X0P7M_A9TL)                               0.02       5.17 f
+  U18874/Y (OR2_X1P4M_A9TL)                               0.02       5.19 f
+  U18873/Y (OR2_X0P7M_A9TL)                               0.03       5.22 f
+  U39729/Y (OR2_X2M_A9TL)                                 0.02       5.24 f
+  U18872/Y (OR2_X0P7M_A9TL)                               0.02       5.26 f
+  U39730/Y (OR2_X2M_A9TL)                                 0.02       5.28 f
+  U18871/Y (OR2_X0P7M_A9TL)                               0.02       5.30 f
+  U18870/Y (OR2_X1P4M_A9TL)                               0.02       5.33 f
+  U18869/Y (OR2_X0P7M_A9TL)                               0.03       5.35 f
+  U39731/Y (OR2_X2M_A9TL)                                 0.02       5.37 f
+  U18868/Y (OR2_X0P7M_A9TL)                               0.02       5.39 f
+  U18867/Y (OR2_X0P7M_A9TL)                               0.02       5.42 f
+  U18866/Y (OR2_X0P7M_A9TL)                               0.02       5.44 f
+  U18865/Y (OR2_X0P7M_A9TL)                               0.02       5.47 f
+  U18864/Y (OR2_X1P4M_A9TL)                               0.02       5.49 f
+  U18863/Y (OR2_X0P7M_A9TL)                               0.02       5.51 f
+  U18862/Y (OR2_X1P4M_A9TL)                               0.02       5.53 f
+  U18861/Y (OR2_X0P7M_A9TL)                               0.02       5.56 f
+  U18860/Y (OR2_X0P7M_A9TL)                               0.02       5.58 f
+  U18859/Y (OR2_X0P7M_A9TL)                               0.02       5.61 f
+  U18858/Y (OR2_X0P7M_A9TL)                               0.02       5.63 f
+  U18857/Y (OR2_X0P7M_A9TL)                               0.02       5.66 f
+  U18856/Y (OR2_X0P7M_A9TL)                               0.02       5.68 f
+  U18855/Y (OR2_X0P7M_A9TL)                               0.02       5.71 f
+  U18854/Y (OR2_X0P7M_A9TL)                               0.02       5.73 f
+  U18852/Y (OR2_X0P7M_A9TL)                               0.02       5.76 f
+  U18851/Y (OR2_X0P7M_A9TL)                               0.02       5.78 f
+  U18850/Y (OR2_X0P7M_A9TL)                               0.02       5.81 f
+  U18848/Y (OR2_X0P7M_A9TL)                               0.02       5.83 f
+  U18846/Y (OR2_X0P7M_A9TL)                               0.02       5.86 f
+  U18842/Y (OR2_X0P7M_A9TL)                               0.02       5.88 f
+  U18838/Y (OR2_X0P7M_A9TL)                               0.02       5.90 f
+  U18836/Y (OR2_X0P7M_A9TL)                               0.02       5.93 f
+  U18833/Y (OR2_X0P7M_A9TL)                               0.02       5.95 f
+  U18829/Y (OR2_X0P7M_A9TL)                               0.02       5.98 f
+  U18827/Y (OR2_X0P7M_A9TL)                               0.02       6.00 f
+  U18825/Y (OR2_X0P7M_A9TL)                               0.02       6.03 f
+  U18820/Y (OR2_X0P7M_A9TL)                               0.02       6.05 f
+  U18815/Y (OR2_X0P7M_A9TL)                               0.02       6.08 f
+  U18813/Y (OR2_X0P7M_A9TL)                               0.02       6.10 f
+  U18810/Y (OR2_X1P4M_A9TL)                               0.02       6.13 f
+  U18804/Y (OR2_X2B_A9TL)                                 0.02       6.14 f
+  U18803/Y (OR2_X0P7M_A9TL)                               0.02       6.17 f
+  U18798/Y (OR2_X0P7M_A9TL)                               0.02       6.19 f
+  U18793/Y (OR2_X0P7M_A9TL)                               0.02       6.21 f
+  U18790/Y (OR2_X0P7M_A9TL)                               0.02       6.24 f
+  U18788/Y (OR2_X0P7M_A9TL)                               0.02       6.26 f
+  U18786/Y (OR2_X0P7M_A9TL)                               0.02       6.29 f
+  U39732/Y (OR2_X0P5M_A9TL)                               0.02       6.31 f
+  U18779/Y (XNOR2_X0P5M_A9TL)                             0.03       6.34 f
+  U39733/Y (NAND3_X1M_A9TL)                               0.01       6.36 r
+  U122674/Y (OAI21_X0P5M_A9TL)                            0.02       6.37 f
+  slice/input_data_buffer_reg[0][5823]/D (DFFRPQ_X0P5M_A9TL)
+                                                          0.00       6.37 f
+  data arrival time                                                  6.37
+
+  clock clk (rise edge)                                   6.50       6.50
+  clock network delay (ideal)                             0.00       6.50
+  clock uncertainty                                      -0.10       6.40
+  slice/input_data_buffer_reg[0][5823]/CK (DFFRPQ_X0P5M_A9TL)
+                                                          0.00       6.40 r
+  library setup time                                     -0.02       6.38
+  data required time                                                 6.38
+  --------------------------------------------------------------------------
+  data required time                                                 6.38
+  data arrival time                                                 -6.37
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1
